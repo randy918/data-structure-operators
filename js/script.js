@@ -634,6 +634,29 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Th
 GOOD LUCK 😀
 */
 
+//!  10922.2322     1
+const players1 = game.players[0];
+const players2 = game.players[1];
+console.log(players1);
+console.log(players2);
+
+//!  10922.2322     2
+
+const [gk, ...fieldPlayers] = players1;
+console.log(gk);
+console.log(fieldPlayers);
+
+//!  10922.2326     3
+
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+
+//!  10922.2328     4
+
+const players1Final = [...players1, 'Thiago', 'Couth', 'Peri'];
+console.log(players1Final);
+
+//! . 10922.2331    5
 /*
 // 1.
 const [players1, players2] = game.players;
